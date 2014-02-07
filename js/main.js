@@ -270,15 +270,15 @@ $(document).ready(function () { // Document ready
             /*	09. VIDEO BACKGROUND READY
 /*-----------------------------------------------------------------------------------*/
 
-
+			/*
             var videobackground = new $.backgroundVideo($('.page1'), {
                 "align": "centerXY",
                 "width": 1280,
                 "height": 720,
-                "path": "http://www.baribal.be/exho/video/", /* Folder wich contain the mp4, ogg and webm video */
+                "path": "http://www.baribal.be/exho/video/", 
                 "filename": "desktop",
                 "types": ["mp4", "ogg", "webm"]
-            });
+            });*/
 
         }
 
