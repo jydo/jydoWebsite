@@ -302,7 +302,7 @@ $(window).load(function () {
     // will first fade out the loading animation
     jQuery("#loading-animation").fadeOut();
     // will fade out the whole DIV that covers the website.
-    jQuery("#preloader").delay(600).fadeOut("slow");
+    jQuery("#preloader").delay(500).fadeOut("slow");
 
 
 

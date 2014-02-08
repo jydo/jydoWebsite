@@ -447,6 +447,9 @@ nav {
 /* Don't display the logo for Phone */
 
 .logo-phone {display: none;}
+.jydo-example {
+	display: block;
+}
 
 /* Huge Title */
 
@@ -839,6 +842,9 @@ h3 {font-size:32px;}
 }
 
 .logo-phone {display: block;}
+.jydo-example {
+	display: none;
+}
 
 .huge-title {
     position: absolute;
