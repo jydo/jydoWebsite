@@ -149,15 +149,15 @@ $(document).ready(function () { // Document ready
     $('form').submit(function () {
 
         var form_data = $(this).serialize();
-
-        if (validateEmail($('input[name=email]').attr('value'))) {
+		
+        if (validateEmail($('#mce-EMAIL').val())) {
 
             if (typeof ajax_form !== "undefined" && ajax_form === true) {
-
                 $.post($(this).attr('action'), form_data, function (data) {
-                    $('form').show('slow', function () {
+                    $('#email_return').show('slow', function () {
                         $(this).after('<div class="clear"></div> <p class="msg-ok">' + data + '</p>');
                     });
+                    $('email_notify').html("<h2>Thank you!</h2>");
                     $('.spam').hide();
                     $('.msg-ok').delay(100).effect("pulsate", {
                         times: 1
@@ -178,11 +178,12 @@ $(document).ready(function () { // Document ready
     });
 
 
+	
     /* Validate E-Mail */
 
     function validateEmail(email) {
         // http://stackoverflow.com/a/46181/11236
-
+		console.log(email);
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
     }
@@ -278,7 +279,10 @@ $(document).ready(function () { // Document ready
                 "path": "http://www.baribal.be/exho/video/", 
                 "filename": "desktop",
                 "types": ["mp4", "ogg", "webm"]
-            });*/
+
+            });
+            */
+
 
         }
 

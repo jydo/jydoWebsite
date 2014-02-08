@@ -25,40 +25,67 @@
 /* 01. FONT FACE ================================================== */
 
 
-@font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 200;
-    src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGEzfSP8PFPIaW8d4wHl9LSw.woff") format("woff");
-}
 
 @font-face {
-    font-family: "Source Sans Pro";
+    font-family: 'latolight';
+    src: url('fonts/lato-black-webfont.eot');
+    src: url('fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-black-webfont.woff') format('woff'),
+         url('fonts/lato-black-webfont.ttf') format('truetype'),
+         url('fonts/lato-black-webfont.svg#latoblack') format('svg');
+    font-weight: 900;
     font-style: normal;
-    font-weight: 400;
-    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlDLXPPWpYIJRcQ99gLLWTOQ.woff") format("woff");
+
 }
 
-@font-face {
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: 600;
-    src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGNF2eBBnhZOFf_rblGEjGiI.woff") format("woff");
-}
 
 @font-face {
-    font-family: "Source Sans Pro";
+    font-family: 'latolight';
+    src: url('fonts/lato-bold-webfont.eot');
+    src: url('fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-bold-webfont.woff') format('woff'),
+         url('fonts/lato-bold-webfont.ttf') format('truetype'),
+         url('fonts/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: 800;
     font-style: normal;
-    font-weight: 700;
-    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGBgDywzySrQSFSEUM6OqW_g.woff") format("woff");
+
 }
+
+
+@font-face {
+    font-family: 'latolight';
+    src: url('fonts/lato-light-webfont.eot');
+    src: url('fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-light-webfont.woff') format('woff'),
+         url('fonts/lato-light-webfont.ttf') format('truetype'),
+         url('fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.eot');
+    src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-regular-webfont.woff') format('woff'),
+         url('fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 	
 /* 02. GENERALS SETTINGS ================================================== */
 
 
 #jydo-logo {
-	font-family: 'Lato', sans-serif;
+	font-family: 'latolight', sans-serif;
+	color: #e7e6e6;
 }
 
 /* Container  */
@@ -102,7 +129,7 @@
 body, html {
     background: #E2E4E7;
     padding: 0;
-       font-family: 'Source Sans Pro', sans-serif;
+       font-family: 'latolight', sans-serif;
     position: relative;
     height: 100%;
     -webkit-font-smoothing: antialiased;
@@ -142,7 +169,7 @@ b, strong {
 
 
 h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'latoregular', sans-serif;
     margin: 0.75em 0.75em 0.25em;
     font-size: 2.70em;
 }
@@ -151,26 +178,26 @@ h2 {
     font-size: 46px;
     font-weight: 100;
     line-height: 46px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'latolight', sans-serif;
     margin-top: 0.33em;
 }
 
 h3 {
-    font: 38px 'Source Sans Pro', sans-serif;
+    font: 38px 'latolight', sans-serif;
     font-weight: 100;
     padding-bottom: 25px;
     padding-top: 0px;
 }
 
 h4 {
-    font: 32px 'Source Sans Pro', sans-serif;
+    font: 32px 'latolight', sans-serif;
     font-weight: normal;
     font-weight: 100;
     padding-bottom: 15px;
 }
 
 h5 {
-    font: 24px 'Source Sans Pro', sans-serif;
+    font: 24px 'latolight', sans-serif;
     font-weight: normal;
     font-weight: 100;
     color:#FFF;
@@ -179,7 +206,7 @@ h5 {
 
 span {
     color: #303333;
-    font: 1.5em 'Source Sans Pro', sans-serif;
+    font: 1.5em 'latolight', sans-serif;
     opacity: 0.4;
     padding-top: 0px;
 }
@@ -198,7 +225,7 @@ a:hover {
 /* Paragrah */
 
 p {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'latolight', sans-serif;
     font-weight: normal;
     color: rgba(255,255,255,0.80);
     line-height: 30px;
@@ -302,7 +329,7 @@ nav {
 /* Navigation Fixed */ 
  
 .cbp-af-header {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'latolight', sans-serif;
     position: fixed;
     top: 0;
     left: 0;
