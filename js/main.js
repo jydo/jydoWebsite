@@ -151,22 +151,16 @@ $(document).ready(function () { // Document ready
         var form_data = $(this).serialize();
 		
         if (validateEmail($('#mce-EMAIL').val())) {
-            if (typeof ajax_form !== "undefined" && ajax_form === true) {
-                $.post($(this).attr('action'), form_data, function (data) {
-                    $('#email_notify').hide();
-                    $('#mc_embed_signup').hide();
-                    $('#email_thanks').delay(100).effect("pulsate", {
-                        times: 1
-                    }, 1000).show();
-                    $('.spam').hide();
-                    $('.msg-ok').delay(100).effect("pulsate", {
-                        times: 1
-                    }, 1000).hide();
-                });
-
-                return false;
-
-            }
+           
+            $('#email_notify').hide();
+            $('#mc_embed_signup').hide();
+            $('#email_thanks').delay(100).effect("pulsate", {
+                times: 1
+            }, 1000).show();
+            $('.spam').hide();
+            $('.msg-ok').delay(100).effect("pulsate", {
+                times: 1
+            }, 1000).hide();
 
         } else {
             $('p.spam').text('Please enter a valid e-mail').effect("pulsate", {
