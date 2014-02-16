@@ -88,6 +88,11 @@
 	color: #e7e6e6;
 }
 
+#email_thanks {
+	display: none;
+}
+
+
 /* Container  */
 
 .container {	
