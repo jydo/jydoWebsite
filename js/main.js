@@ -167,7 +167,7 @@ $(document).ready(function () { // Document ready
                 times: 3
             }, 1000);
             return false;
-        }
+  44      }
 
     });
 
