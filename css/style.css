@@ -429,9 +429,9 @@ nav {
 
 
 .page1 {
-    background: url('../img/bg.jpg')#131313;
-    background-size: cover;
-    height: 100%;
+    background: rgb(76, 143, 192);
+	background-size: cover;
+	height: 100%;
     position: relative;
 }
 
@@ -466,7 +466,14 @@ nav {
     left: 0;
     margin: auto;
     width: 100%;
-    height: 100px;
+    height: 360px;
+}
+
+.huge-title iframe{
+	width : 640px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
 /* Go down text & Button */
