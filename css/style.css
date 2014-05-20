@@ -953,6 +953,9 @@ h3 {font-size:32px;}
 	       
 }
 
+.video-no-phone{
+	display: none;
+}
 /* Media Queries for iPad in Portrait */
 
 @media only screen 
@@ -978,6 +981,8 @@ and (orientation : portrait) {
 
 .page5 {padding: 40px 0;}
 
+
+
  }
 
 /* Media Queries for iPad in Landscape */
@@ -993,10 +998,15 @@ and (orientation : landscape) {
     position: absolute;
     top: 3%;
 }
-	
+
 	
 }
 
-
+@media only screen 
+and (min-width : 768px) {
+	.video-no-phone{
+		display: block;
+	}
+}
 
 
