@@ -228,7 +228,6 @@ a:hover {
 }  
 	
 /* Paragrah */
-
 p {
     font-family: 'latolight', sans-serif;
     font-weight: normal;
@@ -345,6 +344,7 @@ nav {
     -webkit-transition: height 0.6s;
     -moz-transition: height 0.6s;
     transition: height 0.6s;
+	background-color: #4c8fbf;
 }
 
 
@@ -400,13 +400,15 @@ nav {
 
 
 .cbp-af-header.cbp-af-header-shrink {
-	height: 80px;
+	height: 90px;
 	float: right;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+	-moz-box-shadow: 0 0 4px #000000;
+	box-shadow: 0 0 4px #000000;
 }
 
 /* The button comes to the right place */
@@ -426,7 +428,9 @@ nav {
 
 /* 04. PAGE 1 / HEADER SETTINGS ================================================== */
 
-
+.header-line {
+	height:2px;width:125px;margin-bottom:15px;margin-left:5px;background:#53BC89;border-radius:2px
+}
 
 .page1 {
     background: rgb(76, 143, 192);
@@ -478,6 +482,10 @@ nav {
 
 /* Go down text & Button */
 
+.tagline{
+	font-size: 1.3em;
+}
+
 .go-down {
     position: absolute;
     right: 0;
@@ -503,23 +511,60 @@ nav {
 
 
 .page2 {
-    background: #1F1F1F no-repeat center;
-    padding: 80px 0;
+    background: #fcfcfc;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:0;margin-bottom:0;
+	height: 92vh;
 }
 
 
 .page2 h3 {
-    color: #FFF;
+    color: #000000;
     font-weight: 100;
+}
+
+.page2 p {
+    color: #444242;
+    font-weight: 100;
+}
+
+.page2 .row {
+	height: 100%;
+	clear: both;
+}
+
+.page2 .article {
+	float: left;
+	clear: both;
+	display: inline;
+	top: 40%;
+	position: relative;
 }
 
 /* Image from right */
 
-.iphone {
-    bottom: 0;
-    right: -70px;
-    position: absolute;
-    top: 3%;
+.ipad {
+    right: -100px;
+    position: relative;
+    display: inline-block;
+    height: 100%;    
+		top: 20%;
+		float: right;
+		width: 50%;
+}
+
+
+
+.rack {
+	right: -100px;
+	position: relative;
+	display: inline-block;
+	height: 100%;    
+		top: 20%;
+		float: right;
+		width: 50%;
+	
 }
 
 /* Brand icon */
@@ -597,25 +642,36 @@ nav {
 
 
 .page3 {
-    background: #131313;
-    z-index: 999;
-    position: relative;
-    padding: 80px 0;
-    height: 880px;
+    background: #f7f7f7;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:0;margin-bottom:0;
+    height: 92vh;
 }
 
 .page3 h3 {
-    color: #FFF;
+    color: #000000;
     font-weight: 100;
+}
+
+.page3 p {
+    color: #444242;
+    font-weight: 100;
+}
+
+.page3 .row {
+	height: 100%;
+	clear: both;
 }
 
 /* Article */
 
 .page3 .article {
+    float: left;
+    clear: both;
+    display: inline;
+    top: 40%;
     position: relative;
-    z-index: 999;
-    background: #131313;
-    height: 100%;
 }
 
 /* Carousel */
@@ -633,7 +689,6 @@ nav {
 /* Drag-it icon */
 
 #dragit {
-    background: rgba(19,19,19,0.7);
     cursor: pointer;
     width: 100%;
     height: 100%;
@@ -657,17 +712,68 @@ nav {
 
 
 .page4 {
-    background: #191919;
-    z-index: 999;
-    position: relative;
-    padding: 60px 0;
+    background: #333333;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:0;margin-bottom:0;
+    height: 92vh;
 }
 
 .page4 h4 {
-	color:#FFF;
+	color: #ffffff;
 }
 
+.page4 p {
+	color: #ffffff;
+}
 
+.page4 .row {
+	height: 100%;
+	clear: both;
+	padding-top: 15%;
+}
+
+.page4 .article {
+    float: left;
+    clear: both;
+    display: inline;
+    top: 40%;
+    position: relative;
+}
+
+/* 07. PAGE 5 SETTINGS ================================================== */
+
+
+
+.page6 {
+    background: #3f3f3f;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top:0;margin-bottom:0;
+    height: 92vh;
+}
+
+.page6 h4 {
+	color: #ffffff;
+}
+
+.page6 p {
+	color: #ffffff;
+}
+
+.page6 .row {
+	height: 100%;
+	clear: both;
+}
+
+.page6 .article {
+    float: left;
+    clear: both;
+    display: inline;
+    top: 30%;
+    position: relative;
+	text-decoration: none;
+}
 /* 08. TESTIMONIALS  ================================================== */
 
 
@@ -708,6 +814,55 @@ nav {
 }
 
 
+
+#explination {
+	padding:0 0 50px 0; 
+	background: #131313; 
+	position: relative; 
+}
+
+#explination h4 {
+	color: #ffffff;
+}
+#explination .four {
+	margin-right: 13px;
+	text-align: center;
+}
+
+#explination .header-line{
+	margin-left: 85px;
+}
+
+#explination .centered {
+	text-align: center;
+}
+#explination .right {
+	text-align: right;
+}
+
+#explination .row img {
+	padding: 50px;
+}
+
+#connect {
+	 width: 51px;
+	 margin-left: auto;	
+	 margin-right: auto;
+}
+
+#connect img {
+ margin-top: -60px;
+}
+
+#connected {
+	color: #ffffff;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.chart {
+	width: 100%;
+}
 
 /* 09. PAGE 5 / SUBSCRIBE SETTINGS ================================================== */
 
@@ -847,7 +1002,7 @@ h2 {font-size: 42px;}
 
 h3 {font-size:32px;}
 
-.iphone {display: none; }
+.ipad {display: none; }
 
 .cbp-af-header {
 	display: none;
