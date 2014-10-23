@@ -730,7 +730,7 @@ nav {
 .page4 .row {
 	height: 100%;
 	clear: both;
-	padding-top: 15%;
+	padding-top: 5%;
 }
 
 .page4 .article {
@@ -750,7 +750,9 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top:0;margin-bottom:0;
+	
     height: 92vh;
+	padding-top: 0;
 }
 
 .page6 h4 {
