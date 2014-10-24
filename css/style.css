@@ -515,7 +515,7 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top:0;margin-bottom:0;
-	height: 92vh;
+	height: 700px;
 }
 
 
@@ -646,7 +646,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     margin-top:0;margin-bottom:0;
-    height: 92vh;
+    height: 700px;
 }
 
 .page3 h3 {
@@ -716,7 +716,7 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top:0;margin-bottom:0;
-    height: 92vh;
+    height: 700px;
 }
 
 .page4 h4 {
@@ -750,8 +750,7 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top:0;margin-bottom:0;
-	
-    height: 92vh;
+    height: 700px;
 	padding-top: 0;
 }
 
