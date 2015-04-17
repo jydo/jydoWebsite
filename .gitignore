@@ -1,2 +1,3 @@
 *.esproj
 Documentation
+.DS_Store
