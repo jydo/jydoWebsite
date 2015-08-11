@@ -1,0 +1,22 @@
+{
+  "name": "jydo_website",
+  "version": "0.0.0",
+  "authors": [
+    "Kodeman <kody@jydo.com>"
+  ],
+  "main": "bower.json",
+  "license": "MIT",
+  "homepage": "www.jydo.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Easey": "~1.0.0",
+    "fullpage.js": "https://github.com/alvarotrigo/fullPage.js.git#~2.6.7",
+    "materialize": "~0.97.0"
+  }
+}
