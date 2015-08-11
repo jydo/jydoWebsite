@@ -369,3 +369,15 @@ blockquote {
 #plans {
   margin-top: 5%;
 }
+.price-amount {
+  margin-bottom: 0;
+}
+.price-info {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.feature-list li {
+  margin: .25em;
+  text-align: center;
+}
