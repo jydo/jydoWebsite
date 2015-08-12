@@ -1,3 +1,9 @@
+/* Defaults
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body{
+  font-family: Lato;
+}
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -81,7 +87,7 @@ nav a {
   background-image: url('../images/background-blur.jpg');
   background-size: cover;
   background-position:center top;
-  height: 600px;
+  height: 700px;
   padding: 0;
   color: #fff;
 }
@@ -224,7 +230,7 @@ nav a {
     margin-top: 3rem;
   }
   .hero {
-    height: 700px
+    height: 700px;
     padding: 0;
     background-position:center center;
   }
