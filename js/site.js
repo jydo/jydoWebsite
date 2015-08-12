@@ -18,10 +18,10 @@ $(document).ready(function() {
   }
 
   function onScroll() {
-    if ($window.scrollTop() > overviewTop) {
-      $('.nav-wrapper').addClass('past-welcome');
+    if ($window.scrollTop() > 20) {
+      $('#mainNav').removeClass('top');
     } else {
-      $('.nav-wrapper').removeClass('past-welcome');
+      $('#mainNav').addClass('top');
     }
   }
 
