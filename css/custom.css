@@ -290,7 +290,11 @@ nav {
 .question {
   text-align: left;
 }
-
+@media (max-width: 550px){
+  #mainNav a.nav-logo{
+    display: none;
+  }
+}
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
