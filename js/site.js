@@ -3,18 +3,16 @@ $(document).ready(function() {
   // Variables
   var $nav = $('nav'),
       $body = $('body'),
-      $window = $(window),
-      overviewTop = $('.overview').offset().top - $('.nav-wrapper').height();
+      $window = $(window);
 
   function init() {
-    $window.on('scroll', onScroll)
-    $window.on('resize', resize)
+    $window.on('scroll', onScroll);
+    $window.on('resize', resize);
   }
 
   function resize() {
-    $body.removeClass('has-docked-nav')
-    overviewTop = $('.overview').offset().top - $('.nav-wrapper').height();
-    onScroll()
+    $body.removeClass('has-docked-nav');
+    onScroll();
   }
 
   function onScroll() {
