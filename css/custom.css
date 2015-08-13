@@ -290,6 +290,11 @@ nav {
 .question {
   text-align: left;
 }
+@media (max-width: 340px) {
+  nav ul li{
+    font-size: .75em;
+  }
+}
 @media (max-width: 550px){
   #mainNav a.nav-logo{
     display: none;
