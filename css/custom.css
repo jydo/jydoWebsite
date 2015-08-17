@@ -4,7 +4,7 @@
 body {
   font-family: Lato, sans-serif;
   font-size: 18px;
-  color: #999;
+  color: rgba(0, 0, 0, 0.75);
   font-weight: 200;
 }
 h1 {
@@ -25,7 +25,7 @@ h2 {
   text-align: center;
 }
 p {
-  color: #999;
+  color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
@@ -45,8 +45,9 @@ a {
 
 .section {
   text-align: center;
-  color: rgba(0, 0, 17, 0.63);
+  color: rgba(0, 0, 0, 0.75);
   padding: 5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .55);
 }
 .section-heading,
 .section-description {
@@ -54,6 +55,12 @@ a {
 }
 .section h2 {
   font-size: 2.6rem;
+}
+.section.dark {
+  background-color: #FAFAFA;
+}
+.section .description {
+  text-align: left;
 }
 footer {
   padding: 1rem;
@@ -210,12 +217,6 @@ nav ul.left {
   margin-top: 8rem;
 }
 
-/* Overview */
-
-.overview {
-  border-bottom: 1px solid rgba(0, 0, 0, .8);
-}
-
 /* Testimonials
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -292,6 +293,75 @@ nav ul.left {
 .question {
   text-align: left;
 }
+
+/* Get Started */
+.get-started {
+  background-color: #36a9ae;
+  color: #FFFFFF;
+}
+.get-started .button {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  font-weight: normal;
+  height: auto;
+  padding: 5px 45px;
+  margin: 15px;
+}
+
+/* Open */
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: rgba(0, 0, 0, .8);
+}
+.value-heading {
+  /*color: rgba(0, 0, 0, .5);*/
+  margin-bottom: .3rem;
+}
+.value-description {
+  text-align: left;
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Images on product page */
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image .back-col,
+.image .next-col {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 25%;
+  /*background-color: rgba(0, 0, 0, .05);*/
+}
+.image .back-col {
+  left: 0;
+}
+.image .next-col {
+  right: 0;
+}
+.image .icon {
+  display: block;
+  position: absolute;
+  top: 48%;
+}
+.next-col .icon {
+  right: 0;
+}
+.image img {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.image img.fade {
+  opacity: 0;
+}
+
+/* Bigger than 340 but less than 550 */
 @media (max-width: 340px) {
   nav ul li {
     font-size: .75em;
