@@ -1,3 +1,4 @@
 *.esproj
 Documentation
 .DS_Store
+.idea/
