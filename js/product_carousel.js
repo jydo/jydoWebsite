@@ -1,10 +1,15 @@
 // Copyright 2015 jydo inc. All rights reserved.
 
 (function () {
-    var baseURL = './images/framed/', images = ['Start.png', 'AppleTV.png', 'Sidebar.png', 'Laptop.png', 'VTC-Dir.png'];
+    var createCarousel,
+        baseURL = './images/framed/',
+        iPadImages = ['Start.png', 'AppleTV.png', 'Sidebar.png', 'Laptop.png', 'VTC-Dir.png'],
+        //adminImages = ['admin_containers.png', 'admin_devices.png', 'admin_add_devices.png', 'admin_settings.png'];
+        adminImages = ['iMac-Flat-Containers.png', 'iMac-Flat-Devices.png', 'iMac-Flat-AddDevices.png', 'iMac-Flat-Settings.png'];
 
-    $(document).ready(function () {
-        var next = $('.next-col'), back = $('.back-col'), image = $('.image img'), idx = 0;
+    createCarousel = function (sectionClass, images) {
+        var next = $(sectionClass + ' .next-col'), back = $(sectionClass + ' .back-col'),
+            image = $(sectionClass + ' .image img'), idx = 0;
 
         image.on('load', function () {
             image.removeClass('fade');
@@ -27,5 +32,10 @@
                 image.attr('src', baseURL + images[idx]);
             }, 500);
         });
+    };
+
+    $(document).ready(function () {
+        createCarousel('.simplicity', iPadImages);
+        createCarousel('.configuration', adminImages);
     });
 })();
